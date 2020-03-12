@@ -11,5 +11,27 @@ allItems.forEach(item =>{
     })
 })
 
+var status = 0;
+// 0 nanfas
+// 1 lakdjask
 
-gsap.to(".box", {rotation: 27, x: 100, duration: 1});
+if(status == 0){
+    $(".mainthangka").mouseover(function(){
+        gsap.to("#intro-thangka4", {x: -100, y: -100, duration: 1});
+        gsap.to("#intro-thangka3", {x: -50, y: -50, duration: 1});
+        gsap.to("#intro-thangka2", {x: 50, y: 50, duration: 1});
+        gsap.to("#intro-thangka1", {x: 100, y: 100, duration: 1});
+    }).mouseleave(function(){
+        gsap.to("#intro-thangka1", {x: 0, y: 0, duration: 1});
+        gsap.to("#intro-thangka2", {x: 0, y: 0, duration: 1});
+        gsap.to("#intro-thangka3", {x:0, y:0, duration: 1});
+        gsap.to("#intro-thangka4", {x: 0, y: 0, duration: 1});
+    })
+}
+
+
+$("#intro-thangka3").click(function(){
+        gsap.to($(this), {x:0, y:0, scale: 1.5, duration: 1});
+        gsap.to($(this).siblings(), {opacity: 0, duration: .5});
+});
+
