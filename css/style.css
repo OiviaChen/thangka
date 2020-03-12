@@ -145,7 +145,7 @@ ul {
 }
 
 
-.intro-thangka {
+#intro-thangka {
     width: 80%;
     position: absolute;
     top: 50%;
@@ -153,7 +153,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.into-thangka2 {
+#into-thangka2 {
     width: 80%;
     position: absolute;
     top: 48%;
@@ -161,7 +161,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.into-thangka3 {
+#into-thangka3 {
     width: 80%;
     position: absolute;
     top: 46%;
@@ -169,7 +169,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.into-thangka4 {
+#into-thangka4 {
     width: 80%;
     position: absolute;
     top: 44%;
