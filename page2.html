@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale">
+    <title>Hello Thangka</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="parallax.js"></script>
+    <script src="enquire.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="landingpage.html">
+                        <img alt="Brand" src="img/logo.png" height="50">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <a class="navbar-brand logo" href="landingpage.html">Hello Thangka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a type="button" class="btn btn-default btn-lg" href="eshopindex.html">
+                  
+                    <img class="nav-item" src="img/Cart.png" height="30" alt="shop">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <a type="button" class="btn btn-default btn-lg" href="eshopindex.html">
+                        <img class="nav-item" src="img/user.png" height="30" alt="shop">
+                    </a>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--    ver navbar-->
+
+
+    <nav class="navmenu">
+
+        <ul class="flex-column">
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="#huge2">01</a></li>
+            <li><a href="page2.html" class="active">02</a></li>
+            <li><a href="page3.html">03</a></li>
+            <li><a href="page4.html">04</a></li>
+            <li><a href="guide.html">Appreciattion Guide</a></li>
+            <li><a href="findstore.html">Find Stores</a></li>
+        </ul>
+    </nav>
+
+    <!--    divs   -->
+
+    <div class="huge" style="background-image: url('img/bg3.png');">
+        <div class="colum1"></div>
+        <div class="mainthangka">
+            <!--            here are thagnka images  -->
+
+            <img src="img/3-3.png" id="intro-thangka4">
+            <img src="img/3-2.png" id="intro-thangka2">
+            <img src="img/3-1.png" id="intro-thangka1">
+
+
+            <!--
+             <span name="videoTitle"><strong>My Initial Text</strong></span>
+<img src="image.png" onclick="document.getElementsByName('videoTitle')[0].getElementsByTagName('strong')[0].innerHTML = 'My Text'" />
+-->
+
+        </div>
+        <div class="three">
+            <div class="colum2">
+
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+            <div class="know-text" name="symbolname">
+                <h1>What is Thangka?</h1>
+                <p class="intro-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, preti\ justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
+
+                <a href="index2.html"> <button type="button" class="btn btn-link learnmore">Learn more →
+                    </button></a>
+                <div id="sharelink">
+                    <img src="img/facebook.png">
+                    <img src="img/twitter.png">
+                    <img src="img/Instagram.png">
+                </div>
+                <div id="products">
+                    <a href="eshopindex.html">
+                        <img src="img/cd.png" alt="cd" class="cd" href="eshopindex.html">
+                    </a>
+                    <a href="eshopindex.html">
+                        <img src="img/bottole.png" class="bottole" href="eshopindex.html"></a>
+                    <a href="eshopindex.html">
+                        <img src="img/earser.png" class="earser">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- scroll dwon-->
+        <img src="img/scroll.png" id="scroll">
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+
+</body></html>

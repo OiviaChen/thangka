@@ -17,21 +17,21 @@ var status = 0;
 
 if(status == 0){
     $(".mainthangka").mouseover(function(){
-        gsap.to("#intro-thangka4", {x: -100, y: -100, duration: 1});
-        gsap.to("#intro-thangka3", {x: -50, y: -50, duration: 1});
-        gsap.to("#intro-thangka2", {x: 50, y: 50, duration: 1});
-        gsap.to("#intro-thangka1", {x: 100, y: 100, duration: 1});
+        gsap.to("#intro-thangka1", {x: 30, y: 40, duration: 1});
+        gsap.to("#intro-thangka2", {x: 20, y: 50, duration: 1});
+        gsap.to("#intro-thangka3", {x: -20, y: -30, duration: 1});
+        gsap.to("#intro-thangka4", {x: 30, y: 30, duration: 1});
     }).mouseleave(function(){
         gsap.to("#intro-thangka1", {x: 0, y: 0, duration: 1});
         gsap.to("#intro-thangka2", {x: 0, y: 0, duration: 1});
-        gsap.to("#intro-thangka3", {x:0, y:0, duration: 1});
+        gsap.to("#intro-thangka3", {x: 0, y:-10, duration: 1});
         gsap.to("#intro-thangka4", {x: 0, y: 0, duration: 1});
     })
 }
 
-
-$("#intro-thangka3").click(function(){
-        gsap.to($(this), {x:0, y:0, scale: 1.5, duration: 1});
+$("#intro-thangka1").click(function(){
+        gsap.to($(this), {x:0, y:-200, scale:1.5, duration: 1});
         gsap.to($(this).siblings(), {opacity: 0, duration: .5});
+   
 });
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <script src="parallax.js"></script>
     <script src="enquire.min.js"></script>
 </head>
@@ -18,14 +19,14 @@
         <nav class="navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="landingpage.html">
                         <img alt="Brand" src="img/logo.png" height="50">
                     </a>
                 </div>
             </div>
         </nav>
 
-        <a class="navbar-brand logo" href="#">Hello Thangka</a>
+        <a class="navbar-brand logo" href="landingpage.html">Hello Thangka</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,49 +34,59 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a type="button" class="btn btn-default btn-lg" href="index2.html">
+                <a type="button" class="btn btn-default btn-lg" href="eshopindex.html">
+
                     <img class="nav-item" src="img/Cart.png" height="30" alt="shop">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <a type="button" class="btn btn-default btn-lg" href="index2.html">
+                    <a type="button" class="btn btn-default btn-lg" href="eshopindex.html">
                         <img class="nav-item" src="img/user.png" height="30" alt="shop">
                     </a>
                 </a>
             </div>
         </div>
     </nav>
-
     <!--    ver navbar-->
 
 
     <nav class="navmenu">
 
         <ul class="flex-column">
-            <li><a href="#" class="active">Introduction</a></li>
-            <li><a href="#huge2">Special symbols</a></li>
-            <li><a href="#">Special symbols</a></li>
-            <li><a href="#">Gestures</a></li>
-            <li><a href="#">Gestures</a></li>
-            <li><a href="#">Appreciate guide</a></li>
-            <li><a href="#">Find stores</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="index.html" class="active">01</a></li>
+            <li><a href="page2.html">02</a></li>
+            <li><a href="page3.html">03</a></li>
+            <li><a href="page4.html">04</a></li>
+            <li><a href="guide.html">Appreciattion Guide</a></li>
+            <li><a href="findstore.html">Find Stores</a></li>
+
         </ul>
     </nav>
 
     <!--    divs   -->
-    <div class="huge">
+    <div class="huge" style="background-image: url('img/bg2.png');">
         <div class="colum1"></div>
         <div class="mainthangka">
-            <img src="img/sample.png" id="intro-thangka1">
-            
-             <img src="img/sample2.png" id="intro-thangka2">
-            <img src="img/sample3.png" id="intro-thangka3">
-            <img src="img/sample4.png" id="intro-thangka4">
+
+            <img src="img/2-4.png" id="intro-thangka4" class="thangkachange">
+            <img src="img/2-3.png" id="intro-thangka3" class="thangkachange">
+            <img src="img/2-2.png" id="intro-thangka2" class="thangkachange">
+            <img src="img/2-1.png" id="intro-thangka1" class="thangkachange">
+
+            <!--
+             <span name="videoTitle"><strong>My Initial Text</strong></span>
+<img src="image.png" onclick="document.getElementsByName('videoTitle')[0].getElementsByTagName('strong')[0].innerHTML = 'My Text'" />
+-->
+
         </div>
         <div class="three">
             <div class="colum2">
 
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
             </div>
-            <div class="know-text">
+            <div class="know-text" name="symbolname">
                 <h1>What is Thangka?</h1>
                 <p class="intro-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, preti\ justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
@@ -87,7 +98,18 @@
                     <img src="img/twitter.png">
                     <img src="img/Instagram.png">
                 </div>
-            </div>c
+                <div id="products">
+                    <a href="eshopindex.html">
+                        <img src="img/cd.png" alt="cd" class="cd" href="eshopindex.html">
+                    </a>
+                    <a href="eshopindex.html">
+                        <img src="img/bottole.png" class="bottole" href="eshopindex.html"></a>
+                    <a href="eshopindex.html">
+                        <img src="img/earser.png" class="earser">
+                    </a>
+
+                </div>
+            </div>
 
         </div>
         <!-- scroll dwon-->
@@ -96,57 +118,9 @@
 
 
 
-    <!--    divs2   -->
-    <!--
-    <div id="huge2">
-        <div class="colum1"></div>
-        <div class="mainthangka">
-            <img src="img/sample.png" class="intro-thangka">
-        </div>
-        <div class="three"> 
-            <div class="colum2">
-
-            </div>
-            <div class="know-text">
-                <h1>What is Thangka?</h1>
-                <p class="intro-text">
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, preti\ justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
-
-                    <a href="index2.html"> <button type="button" class="btn btn-link learnmore">Learn more →
-                        </button></a>
-                    <div class="sharelink">
-                        <img src="img/facebook.png">
-                        <img src="img/twitter.png">
-                        <img src="img/Instagram.png">
-                    </div>
-            </div>
-
-        </div>
--->
-    <!-- scroll dwon-->
-<!--
-    <img src="img/scroll.png" id="scroll">
-    </div>
--->
 
 
-    <!--
-      30% done thangka layer
-    <div class="container">
-        <ul id="scene">
-            <li class="layer" data-depth="-1"><img class="layerimg" src="img/home3.png"></li>
-            <li class="layer" data-depth="1"><img class="layerimg" src="img/home2.png"></li>
-
-            <li class="layer" data-depth=".2"><img class="layerimg" src="img/home1.png"></li>
-
-        </ul>
-    </div>
-
--->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
