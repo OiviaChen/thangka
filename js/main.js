@@ -30,8 +30,13 @@ if(status == 0){
 }
 
 $("#intro-thangka1").click(function(){
-        gsap.to($(this), {x:0, y:-200, scale:1.5, duration: 1});
+        gsap.to($(this), {x:0, y:0, scale:1.5, duration: 1});
         gsap.to($(this).siblings(), {opacity: 0, duration: .5});
-   
+        $("#infotitle").html("Symbols");
 });
 
+$("#closeicon").click(function(){
+        gsap.to($("#intro-thangka1"), {x:0, y:0, scale:1, duration: 1});
+        gsap.to($("#intro-thangka1").siblings(), {opacity: 1, duration: .5});
+        $("#infotitle").html("What is Thangka?");
+});
